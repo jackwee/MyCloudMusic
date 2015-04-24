@@ -11,30 +11,38 @@
 
 @interface JFSCViewController ()
 
+@property (strong,atomic)MyTableViewController *mytv;
+
 @end
 
 @implementation JFSCViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[self.tableView addSubview:[[[MyTableViewController alloc]init]view]];
-    //获得nib视图数组
-    NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"MyTableView" owner:self.tableView options:nil];
-    //得到第一个UIView
-    UIView *tmpCustomView = [nib objectAtIndex:0];
-    //获得屏幕的Frame
-//    CGRect tmpFrame = [[UIScreen mainScreen] bounds];
-    //设置自定义视图的中点为屏幕的中点
-//    [tmpCustomView setCenter:CGPointMake(tmpFrame.size.width / 2, tmpFrame.size.height / 2)];
+    // 从storyboard创建MainViewController
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    self.mytv = (MyTableViewController*)[storyboard instantiateViewControllerWithIdentifier:@"tableViewController"];
 
-    [tmpCustomView setFrame:CGRectMake(self.tableView.frame.origin.x , self.tableView.frame.origin.y, self.tableView.frame.size.width, self.tableView.frame.size.height)];
+//    [self presentViewController:mainViewController animated:YES completion:nil];
+    [self.tableView addSubview:self.mytv.view];
     
-//    printf("%f",self.tableView.frame.size.height);
-//    printf("%f",self.tableView.frame.size.width);
+    CGRect screenBounds = [[UIScreen mainScreen] bounds] ;
+    [self.scoreView setFrame:CGRectMake(0, 0, screenBounds.size.width/3.0f, 120.0f)];
+    [self.orderView setFrame:CGRectMake(screenBounds.size.width/3.0f, 0, screenBounds.size.width/3.0f, 120.0f)];
+    [self.earnView setFrame:CGRectMake((screenBounds.size.width/3.0f)*2.0f, 0, screenBounds.size.width/3.0f, 120.0f)];
     
-    //添加视图
-    [self.tableView addSubview:tmpCustomView];
-    // Do any additional setup after loading the view.
+
+
+
+}
+
+
+-(void)awakeFromNib{
+    [super awakeFromNib];
+    CGRect screenBounds = [[UIScreen mainScreen] bounds] ;
+    [self.scoreView setFrame:CGRectMake(0, 0, screenBounds.size.width/3.0f, 120.0f)];
+    [self.orderView setFrame:CGRectMake(screenBounds.size.width/3.0f, 0, screenBounds.size.width/3.0f, 120.0f)];
+    [self.earnView setFrame:CGRectMake((screenBounds.size.width/3.0f)*2.0f, 0, screenBounds.size.width/3.0f, 120.0f)];
 }
 
 - (void)didReceiveMemoryWarning {

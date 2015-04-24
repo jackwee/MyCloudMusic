@@ -17,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    [application setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+    [application setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    UIColor *color = [UIColor colorWithRed:255/255.0f green:0/255.0f blue:0/255.0f alpha:1.0f];
+    [[UINavigationBar appearance] setBarTintColor:color];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     return YES;
 }
 

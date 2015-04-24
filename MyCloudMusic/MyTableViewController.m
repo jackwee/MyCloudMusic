@@ -110,7 +110,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupDataSource];
-    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     __weak MyTableViewController *weakSelf = self;
     
     // setup pull-to-refresh

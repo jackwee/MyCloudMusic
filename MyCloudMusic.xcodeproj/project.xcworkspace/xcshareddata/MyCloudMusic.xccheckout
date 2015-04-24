@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8770C089-7AE1-4297-A6BF-CDDC91CE129D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyCloudMusic</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5729BC4215160F5D6EFC24112AA53EA8B6B359ED</key>
+		<string>https://github.com/jackwee/MyCloudMusic.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyCloudMusic.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5729BC4215160F5D6EFC24112AA53EA8B6B359ED</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jackwee/MyCloudMusic.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5729BC4215160F5D6EFC24112AA53EA8B6B359ED</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5729BC4215160F5D6EFC24112AA53EA8B6B359ED</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyCloudMusic</string>
+		</dict>
+	</array>
+</dict>
+</plist>
