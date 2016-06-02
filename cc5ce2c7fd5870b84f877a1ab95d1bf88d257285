@@ -22,6 +22,29 @@
       "revId": "cc5ce2c7fd5870b84f877a1ab95d1bf88d257285",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_78fde5af",
+        "filename": "MyCloudMusic/AppDelegate.m",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1002295
+      },
+      "writtenOn": "2016-06-02T08:16:25Z",
+      "side": 1,
+      "message": "dgjlkalkjgla",
+      "range": {
+        "startLine": 17,
+        "startChar": 16,
+        "endLine": 17,
+        "endChar": 27
+      },
+      "revId": "cc5ce2c7fd5870b84f877a1ab95d1bf88d257285",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
